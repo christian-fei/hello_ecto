@@ -1,5 +1,5 @@
 FROM msaraiva/elixir-dev
-# RUN apk --update add git && rm -rf /var/cache/apk/*
+RUN apk --update add postgresql-client && rm -rf /var/cache/apk/*
 ADD mix.exs /app/mix.exs
 WORKDIR /app
 ENV MIX_ENV prod
