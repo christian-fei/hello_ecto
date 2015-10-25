@@ -5,9 +5,10 @@ defmodule HelloEcto.Supervisor do
     Supervisor.start_link(__MODULE__, [])
   end
 
-  def init(opts) do
+  def init(_) do
     children = [
-      worker(HelloEcto.Worker, [])
+      worker(HelloEcto.Worker, []),
+      worker(HelloEcto.Repo, []),
     ]
     supervise(children, strategy: :one_for_one)
   end
