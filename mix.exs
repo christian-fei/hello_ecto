@@ -21,6 +21,7 @@ defmodule HelloEcto.Mixfile do
       {:ecto, "~> 1.0.6"},
       {:cowboy, "~> 1.0.3"},
       {:plug, "~> 1.0.2"},
+      {:poison, "~> 1.5"},
     ]
   end
 end
