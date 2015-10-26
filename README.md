@@ -1,5 +1,8 @@
 # HelloEcto
 
+[![Build Status](https://travis-ci.org/christian-fei/hello_ecto.svg)](https://travis-ci.org/christian-fei/hello_ecto)
+
+
 # setup
 
 ## docker
