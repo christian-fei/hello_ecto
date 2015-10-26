@@ -22,6 +22,7 @@ defmodule HelloEcto.Mixfile do
       {:cowboy, "~> 1.0.3"},
       {:plug, "~> 1.0.2"},
       {:poison, "~> 1.5"},
+      {:inch_ex, only: :docs},
     ]
   end
 end
