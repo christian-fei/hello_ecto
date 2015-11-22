@@ -5,13 +5,12 @@
 
 # setup
 
-## docker
+## docker-compose
 
 ```
 docker-compose build
 docker-compose run web mix ecto.create
 docker-compose run web mix ecto.migrate
-docker-compose run web mix run priv/repo/seed.exs
 ```
 and finally
 
@@ -19,11 +18,36 @@ and finally
 docker-compose up
 ```
 
-OR
+### tldr;s
+
+Launching missiles:
+```
+docker-compose build; docker-compose run web mix ecto.create; docker-compose run web mix ecto.migrate; docker-compose up
+```
+
+Raking the garden:
+```
+docker-compose run web mix run priv/repo/seed.exs
+```
+
+Dropping plates:
+```
+docker-compose run web mix ecto.drop
+```
+
+
+
+
 
 
 
 ## dev machine
+
+Alternatively, you can do the same without docker compose, but you're a really weird kid.
+
+I don't document this anymore, sorry. But it should be essentially the same as above.
+
+---
 
 In psql console run:
 
